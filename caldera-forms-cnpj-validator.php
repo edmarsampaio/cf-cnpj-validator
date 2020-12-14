@@ -13,7 +13,7 @@
  * Text Domain:       cnpj-cf-validator
  * Domain Path:       /languages
  */
-add_filter('caldera_forms_get_form_processors', 'cnpj-cf-validator.php');
+add_filter('caldera_forms_get_form_processors', 'caldera-forms-cnpj-validator');
 
 /**
  * Add a custom processor for field validation
@@ -24,7 +24,7 @@ add_filter('caldera_forms_get_form_processors', 'cnpj-cf-validator.php');
  *
  * @return array
  */
-function cnpj_cf_validator_processor($processors){
+function caldera-forms-cnpj-validator($processors){
     $processors['cnpj-cf-validator'] = array(
         'name' => __('CNPJ Validator', 'cnpj' ),
         'description' => '',
