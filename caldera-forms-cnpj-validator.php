@@ -50,7 +50,7 @@ function cnpj_validator( array $config, array $form ){
     $data = new Caldera_Forms_Processor_Get_Data( $config, $form, cnpj_cf_validator_fields() );
 
     //Value of field to be validated
-    $value = $data->get_value( 'cnpj' );
+    $value = $data->get_value( 'field-to-validate' );
 
     //if not valid, return an error
     if( false == cnpj_cf_validator_is_valid( $value ) ){
