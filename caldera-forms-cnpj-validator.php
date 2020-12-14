@@ -130,7 +130,7 @@ function cnpj_cf_validator_is_valid( $value ){
  *
  * @return array
  */
-function my_custom_cf_validator_fields(){
+function cnpj_cf_validator_fields(){
     return array(
         array(
             'id' => 'field-to-validate',
